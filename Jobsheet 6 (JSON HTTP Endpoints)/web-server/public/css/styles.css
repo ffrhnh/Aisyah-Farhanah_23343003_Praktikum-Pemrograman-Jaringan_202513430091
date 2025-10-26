@@ -1,1 +1,90 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    color: #333333; /* Warna teks utama */
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 650px; /* Batasi lebar total halaman */
+    margin: 0 auto; /* Tengah-kan konten di tengah layar */
+    padding: 0 16px; /* Tambahkan sedikit padding di sisi kiri/kanan */
+    
+    /* Atur tata letak body menggunakan Flexbox untuk menempatkan footer di bawah */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Pastikan body setidaknya setinggi viewport */
+}
+
+/* HEADER (Navigation/Navigasi) */
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+    text-align: center; /* Tengah-kan logo/judul */
+}
+
+header h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+/* Navigasi Links */
+header a {
+    color: #888888;
+    margin-right: 12px; /* Jarak antar link navigasi */
+    text-decoration: none;
+}
+
+.main-content {
+    /* Gunakan flex-grow agar konten utama mengambil semua ruang yang tersedia */
+    flex-grow: 1; 
+    /* Tengah-kan konten utama (opsional, tergantung desain spesifik) */
+    /* Jika Anda ingin kontennya sejajar dengan header dan footer, tidak perlu text-align: center; */
+    text-align: center; 
+}
+
+/* FOOTER */
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee; /* Garis pemisah di atas footer */
+    margin-top: 48px;
+    padding: 16px 0;
+    text-align: center; /* Tengah-kan teks footer */
+}
+
+#form-lokasi {
+    margin-bottom: 20px;
+}
+
+#input-lokasi {
+    border: 1px solid #cccccc;
+    padding: 8px;
+    border-radius: 4px 0 0 4px; /* Sudut melengkung kiri */
+    outline: none;
+    width: 200px; /* Lebar input */
+}
+
+#form-lokasi button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+    border-radius: 0 4px 4px 0; /* Sudut melengkung kanan */
+}
+
+#pesan-lokasi, #pesan-prediksi {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+    min-height: 20px; /* Memastikan ruang tetap ada bahkan saat kosong */
+}
+
+/* STYLING SPESIFIK UNTUK HALAMAN TENTANG */
+.main-content img {
+    width: 250px; /* Atur ukuran gambar agar konsisten */
+    height: auto;
+    border: 1px solid #cccccc;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
